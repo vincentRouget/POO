@@ -1,10 +1,12 @@
 public class Classroom {
     public static void main(String[] args) {
-        Wilder mjsiva = new Wilder("mjsilva", true);
-        mjsiva.whoAmI();
+        Wilder mjsilva = new Wilder("mjsilva", true);
         Wilder Haroune = new Wilder("Haroune", true);
-        Haroune.whoAmI();
         Wilder Diamantine = new Wilder("Diamantine", false);
-        Diamantine.whoAmI();
+
+        Wilder[] classroom = { mjsilva, Haroune, Diamantine };
+        for (Wilder student : classroom) {
+            System.out.println(student.whoAmI());
+        }
     }
 }

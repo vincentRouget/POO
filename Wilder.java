@@ -26,12 +26,12 @@ public class Wilder {
         this.aware = aware;
     }
 
-    public void whoAmI() {
+    public String whoAmI() {
         if (aware) {
             message = "Je m'appelle " + this.getFirstname() + " et je suis aware";
         } else {
             message = "Je m'appelle " + this.getFirstname() + " et je ne suis pas aware";
         }
-        System.out.println(message);
+        return message;
     }
 }
